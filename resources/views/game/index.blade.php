@@ -57,6 +57,8 @@
 
                     </div>
 
+                    {{ $games->links() }}
+
                 </div>
             </div>
             <!-- /.row -->

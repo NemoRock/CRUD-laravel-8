@@ -12,8 +12,7 @@ class IndexController extends Controller
     public function __invoke()
     {
 
-        $games = Game::all();
-        $genres = Genre::all();
-        return view('game.index', compact('games', 'genres'));
+        $games = Game::paginate(10);
+        return view('game.index', compact('games'));
     }
 }

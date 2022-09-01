@@ -49,10 +49,12 @@
                                 @endforeach
                                 </tbody>
                             </table>
+
                         </div>
 
-                    </div>
 
+                    </div>
+                    {{ $genres->links() }}
                 </div>
             </div>
             <!-- /.row -->
