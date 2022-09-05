@@ -26,6 +26,7 @@ Route::group(['prefix' => 'games'], function (){
 
 Route::group(['prefix' => 'genres'], function (){
     Route::get('/', \App\Http\Controllers\Genre\IndexController::class)->name('genre.index');
+    Route::get('/search', \App\Http\Controllers\Genre\SearchController::class)->name('genre.search');
     Route::get('/create', \App\Http\Controllers\Genre\CreateController::class)->name('genre.create');
     Route::post('/', \App\Http\Controllers\Genre\StoreController::class)->name('genre.store');
     Route::get('/{genre}/edit', \App\Http\Controllers\Genre\EditController::class)->name('genre.edit');

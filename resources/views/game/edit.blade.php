@@ -45,7 +45,6 @@
                                     <option value="{{$genre->id}}" >{{$genre->genre}}</option>
                                 @endif
                             @endforeach
-
                         </select>
                     </div>
                     <div class="form-group">

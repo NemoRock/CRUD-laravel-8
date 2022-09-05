@@ -60,6 +60,12 @@
                             <p>Жанры</p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{ route('genre.search') }}" class="nav-link">
+                            <i class="nav-icon fas fa-search"></i>
+                            <p>Поиск по жанру</p>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->
