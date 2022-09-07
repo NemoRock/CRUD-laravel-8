@@ -9,6 +9,7 @@ class Game extends Model
 {
     protected $table = 'games';
     protected $guarded = false;
+    protected $fillable = ['name'];
 
     public function genres()
     {

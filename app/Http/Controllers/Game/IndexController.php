@@ -11,7 +11,6 @@ class IndexController extends Controller
 {
     public function __invoke()
     {
-
         $games = Game::paginate(10);
         return view('game.index', compact('games'));
     }

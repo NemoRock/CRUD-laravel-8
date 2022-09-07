@@ -14,9 +14,9 @@ class SearchController extends Controller
     {
         $data = $searchRequest->validated();
 
-        $g = GameGenre::query()->where('genre_id', $data)->get()->pluck('game_id')->toArray();
+        $searchGameIds = GameGenre::query()->where('genre_id', $data)->get()->pluck('game_id')->toArray();
 
-        $searchGames = Game::query()->whereIn('id', $g)->paginate(10);
+        $searchGames = Game::query()->whereIn('id', $searchGameIds)->paginate(10);
 
         $genres = Genre::all();
         return view('genre.search', compact('genres', 'searchGames'));

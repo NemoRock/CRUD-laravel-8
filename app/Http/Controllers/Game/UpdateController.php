@@ -15,7 +15,7 @@ class UpdateController extends Controller
     {
         $data = $request->validated();
 
-        $genresIds = $data['genres'];
+        $genresIds = $data['genres']??[];
         unset($data['genres']);
 
 
