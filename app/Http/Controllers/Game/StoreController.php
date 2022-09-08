@@ -16,10 +16,10 @@ class StoreController extends Controller
 
         $genresIds = $data['genres'] ?? [];
 
-        unset($data['genres']);
+//        unset($data['genres']);
 
         $game = Game::firstOrCreate([
-            'name' => $data['name']
+            'name' => $data['name'],
             ],$data);
 
         foreach ($genresIds as $genresId){

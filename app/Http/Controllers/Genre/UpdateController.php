@@ -8,10 +8,9 @@ use App\Models\Genre;
 
 class UpdateController extends Controller
 {
-    public function __invoke(UpdateRequest $request, Genre $genre)
+    public function __invoke(UpdateRequest $updateRequest, Genre $genre)
     {
-        $data = $request->validated();
-        $genre->update($data);
+        $genre->update($updateRequest->validated());
 
         return view('genre.show', compact('genre'));
     }

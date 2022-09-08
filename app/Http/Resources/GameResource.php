@@ -17,6 +17,7 @@ class GameResource extends JsonResource
         return [
         'id' => $this->id,
         'name' => $this->name,
+        'studio_developer' => $this->studio_developer,
         'created_at' => $this->created_at,
         'updated_at' => $this->updated_at,
         'genres' => GenreResource::collection($this->genres),

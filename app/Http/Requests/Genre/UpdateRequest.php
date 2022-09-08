@@ -24,7 +24,7 @@ class UpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'genre' => 'required|string',
+            'genre' => 'required|string|unique:genres',
         ];
     }
 }
