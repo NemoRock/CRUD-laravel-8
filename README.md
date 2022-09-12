@@ -1,4 +1,3 @@
-
 # CRUD-laravel-8
 
  <p> Всех приветствую, это мое учебное веб приложение по работе с базой данных, хранящей данные о видеоиграх: название, разработчик, несколько жанров которым соответствует игра. Реализованы CRUD операции, а также поиск игр по жанрам, доп. условие - если игре было присвоен жанр, то он не меняется.<br>
@@ -7,9 +6,10 @@
 Главная страница
 http://localhost:8877/
 
-Postman (указать тип ответа сервера  Accept : application/json) запросы по API:
-* Поиск по жанру (id) <br> метод  - GET <br>
-  
+Postman (указать тип ответа сервера Accept : application/json) запросы по API:
+
+* Поиск по жанру (id) <br> метод - GET <br>
+
   http://localhost:8877/api/V1/genres/search/{id}
   <br>
   <br>
@@ -17,22 +17,22 @@ Postman (указать тип ответа сервера  Accept : application
   http://localhost:8877/api/V1/games
   <br>
   <br>
-*  Получение списка игр <br> метод - GET <br>
-   http://localhost:8877/api/V1/games 
-   <br>
+* Получение списка игр <br> метод - GET <br>
+  http://localhost:8877/api/V1/games
+  <br>
   <br>
 * Получение конкретной игры<br> метод - GET <br>
-   http://localhost:8877/api/V1/games/{game}
+  http://localhost:8877/api/V1/games/{game}
   <br>
   <br>
 * Изменение конкретной игры<br> метод - PATCH <br>
-     http://localhost:8877/api/V1/games/{game}
+  http://localhost:8877/api/V1/games/{game}
   <br>
-     <br>
+  <br>
 * Удаление конкретной игры<br> метод - DELETE <br>
-     http://localhost:8877/api/V1/games/{game}
-     <br>
-     <br>
+  http://localhost:8877/api/V1/games/{game}
+  <br>
+  <br>
 
 
 
