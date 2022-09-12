@@ -21,7 +21,7 @@ Postman (указать тип ответа сервера  Accept : application
    http://localhost:8877/api/V1/games 
    <br>
   <br>
-*  Получение конкретной игры<br> метод - GET <br>
+* Получение конкретной игры<br> метод - GET <br>
    http://localhost:8877/api/V1/games/{game}
   <br>
   <br>
@@ -29,7 +29,7 @@ Postman (указать тип ответа сервера  Accept : application
      http://localhost:8877/api/V1/games/{game}
   <br>
      <br>
-*  Удаление конкретной игры<br> метод - DELETE <br>
+* Удаление конкретной игры<br> метод - DELETE <br>
      http://localhost:8877/api/V1/games/{game}
      <br>
      <br>
