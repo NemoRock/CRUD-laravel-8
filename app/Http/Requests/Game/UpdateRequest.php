@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests\Game;
 
+use App\Rules\fieldEmpty;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateRequest extends FormRequest
@@ -26,7 +27,7 @@ class UpdateRequest extends FormRequest
         return [
             'name' => 'required|string',
             'studio_developer' => 'required',
-            'genres' => 'array',
+            'genres' => 'array'
         ];
     }
 }

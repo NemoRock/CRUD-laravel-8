@@ -7,6 +7,7 @@ use App\Http\Requests\Game\UpdateRequest;
 use App\Http\Resources\GameResource;
 use App\Models\Game;
 use App\Models\GameGenre;
+use Illuminate\Validation\ValidationException;
 
 class UpdateController extends Controller
 {
@@ -17,9 +18,11 @@ class UpdateController extends Controller
         $genresIds = $data['genres']??[];
         unset($data['genres']);
 
+        if (GameGenre::where('game_id', '=', $game->id)->exists()){
+            throw ValidationException::withMessages(['genres' => 'Assigned genres cannot be changed.']);
+        }
 
         $game->update($data);
-
 
         foreach ($genresIds as $genresId){
             GameGenre::firstOrCreate([

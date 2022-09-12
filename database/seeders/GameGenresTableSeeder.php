@@ -16,7 +16,7 @@ class GameGenresTableSeeder extends Seeder
      */
     public function run()
     {
-        for($i = 1; $i < 61; $i++) {
+        for($i = 10; $i < 61; $i++) {
             $game = Game::where('id', $i)->first();
             $genre = Genre::where('id', rand(1, 20))->first();
             DB::table('game_genres')->insert([

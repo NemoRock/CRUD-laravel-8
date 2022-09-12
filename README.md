@@ -1,8 +1,17 @@
 
 # CRUD-laravel-8
 
-Здравствуйте, у меня нет опыта, и совсем и совсем не у кого что-то спросить, ну в общем сделал как смог.
-В следующий раз обязательно сделаю лучше)
+Postman запросы по API:
+* Поиск по жанру (id) method - GET <br>
+  Указать тип ответа сервера  Accept : application/json
+  http://localhost:8877/api/V1/genres/search/{id}
+    <br>
+
+* Create genres method - POST <br>
+ {"genre" : "name genre"}
+http://localhost:8877/api/V1/genres
+<br>
+
 
 ![Снимок экрана (12)](https://user-images.githubusercontent.com/94881316/188412172-6411ed85-0c86-4fb4-be80-1d7a1aafd12e.png)
 ![Снимок экрана (13)](https://user-images.githubusercontent.com/94881316/188412322-9e51543f-e6ab-4362-8f85-57eec8473d1e.png)

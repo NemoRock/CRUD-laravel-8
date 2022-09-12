@@ -16,7 +16,7 @@ class StoreController extends Controller
 
         $genresIds = $data['genres'] ?? [];
 
-//        unset($data['genres']);
+        unset($data['genres']);
 
         $game = Game::firstOrCreate([
             'name' => $data['name'],

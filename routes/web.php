@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/home', \App\Http\Controllers\Main\IndexController::class)->name('main.index');
+Route::get('/', \App\Http\Controllers\Main\IndexController::class)->name('main.index');
 
 Route::group(['prefix' => 'games'], function (){
     Route::get('/', \App\Http\Controllers\Game\IndexController::class)->name('game.index');
