@@ -1,16 +1,39 @@
 
 # CRUD-laravel-8
 
-Postman запросы по API:
-* Поиск по жанру (id) method - GET <br>
-  Указать тип ответа сервера  Accept : application/json
-  http://localhost:8877/api/V1/genres/search/{id}
-    <br>
+ <p> Всех приветствую, это мое учебное веб приложение по работе с базой данных, хранящей данные о видеоиграх: название, разработчик, несколько жанров которым соответствует игра. Реализованы CRUD операции, а также поиск игр по жанрам, доп. условие - если игре было присвоен жанр, то он не меняется.<br>
+Взаимодействовать с базой можно как через веб страницы ,так и через API.</p>
 
-* Create genres method - POST <br>
- {"genre" : "name genre"}
-http://localhost:8877/api/V1/genres
-<br>
+Главная страница
+http://localhost:8877/
+
+Postman (указать тип ответа сервера  Accept : application/json) запросы по API:
+* Поиск по жанру (id) <br> метод  - GET <br>
+  
+  http://localhost:8877/api/V1/genres/search/{id}
+  <br>
+  <br>
+* Создание игры <br> метод - POST <br>
+  http://localhost:8877/api/V1/games
+  <br>
+  <br>
+*  Получение списка игр <br> метод - GET <br>
+   http://localhost:8877/api/V1/games 
+   <br>
+  <br>
+*  Получение конкретной игры<br> метод - GET <br>
+   http://localhost:8877/api/V1/games/{game}
+  <br>
+  <br>
+* Изменение конкретной игры<br> метод - PATCH <br>
+     http://localhost:8877/api/V1/games/{game}
+  <br>
+     <br>
+*  Удаление конкретной игры<br> метод - DELETE <br>
+     http://localhost:8877/api/V1/games/{game}
+     <br>
+     <br>
+
 
 
 ![Снимок экрана (12)](https://user-images.githubusercontent.com/94881316/188412172-6411ed85-0c86-4fb4-be80-1d7a1aafd12e.png)
